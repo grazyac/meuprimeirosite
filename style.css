@@ -1,0 +1,183 @@
+/* Definindo variáveis globais de cores */
+:root {
+    --cor-primaria: #c4bfbf; /* Verde da bandeira da Itália */
+    --cor-secundaria: #F4F5F0; /* Branco neutro */
+    --cor-destaque: hsl(48, 89%, 50%); /* Amarelo dourado, símbolo da Itália */
+    --cor-acento: #2750c4; /* Vermelho da bandeira da Itália */
+    --cor-texto: #333; /* Cor do texto principal */
+    --cor-fundo: #F4F4F4; /* Fundo suave */
+    --cor-borda: #ddd; /* Cor para bordas suaves */
+    
+    /* Variáveis de Tipografia */
+    --font-familia-principal: 'Arial', sans-serif;
+    --font-familia-secundaria: 'Helvetica', sans-serif;
+    --tamanho-fonte-base: 16px;
+    --tamanho-fonte-titulo: 2rem; /* Tamanho de títulos (h1, h2) */
+    --tamanho-fonte-corpo: 1rem; /* Tamanho do corpo do texto */
+    --peso-fonte: 400;
+    --peso-fonte-negrito: 700;
+}
+
+/* Estilos gerais para o body */
+body {
+    font-family: var(--font-familia-principal);
+    margin: 0;
+    padding: 0;
+    background-color: var(--cor-fundo);
+    font-size: var(--tamanho-fonte-base);
+    color: var(--cor-texto);
+}
+
+/* Cabeçalho */
+header {
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Títulos */
+h1, h2 {
+    margin: 0;
+    padding: 10px 0;
+    font-family: var(--font-familia-secundaria);
+    font-size: var(--tamanho-fonte-titulo);
+    font-weight: var(--peso-fonte-negrito);
+}
+
+h2 {
+    font-size: 1.5rem; /* Tamanho de h2 */
+}
+
+/* Menu de navegação */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color: var(--cor-acento);
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: var(--cor-secundaria);
+    text-decoration: none;
+    padding: 10px 20px;
+    display: inline-block;
+    font-size: var(--tamanho-fonte-base);
+}
+
+nav ul li a:hover {
+    background-color: var(--cor-primaria);
+    color: white;
+}
+
+/* Formulário */
+form {
+    margin-bottom: 20px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: var(--peso-fonte-negrito);
+}
+
+input[type="text"], input[type="email"], input[type="password"], textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid var(--cor-borda);
+    border-radius: 4px;
+    font-size: var(--tamanho-fonte-base);
+}
+
+button {
+    padding: 10px 20px;
+    background-color: var(--cor-acento);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: var(--peso-fonte-negrito);
+}
+
+button:hover {
+    background-color: var(--cor-primaria);
+}
+
+/* Tabelas */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th, table td {
+    padding: 12px;
+    border: 1px solid var(--cor-borda);
+    text-align: left;
+}
+
+table th {
+    background-color: var(--cor-secundaria);
+}
+
+/* Rodapé */
+footer {
+    background-color: var(--cor-primaria);
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 14px;
+}
+
+footer a {
+    color: var(--cor-secundaria);
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Layout do conteúdo principal */
+main {
+    padding: 20px;
+    background-color: var(--cor-secundaria);
+    margin: 20px auto;
+    max-width: 960px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Espaçamento adicional */
+section {
+    margin-bottom: 40px;
+}
+
+.section-header {
+    margin-bottom: 15px;
+}
+
+.form-input {
+    margin-bottom: 15px;
+}
+
+/* Estilo de links */
+a {
+    color: var(--cor-primaria);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}

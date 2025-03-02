@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro e Lista de Objetos Tema - Administração</title>
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header class="bg-primary text-white text-center py-4">
+        <h1>Área de Administração</h1>
+    </header>
+    
+    <!-- Menu de Navegação -->
+    <nav>
+        <ul>
+            <li><a href="admin_login.html">Login</a></li>
+            <li><a href="admin_cad_obj.html">Cadastro de Artistas</a></li>
+            <li><a href="admin_cad_usu.html">Cadastro de Usuários</a></li>
+            <li><a href="index.html">Página Inicial</a></li>
+        </ul>
+    </nav>
+
+    <!-- Conteúdo Principal -->
+    <main>
+        <section>
+            <h2>Cadastro de Artistas</h2>
+            <form action="#" method="POST" enctype="multipart/form-data">
+                <label for="section">Seção musical:</label>
+                <input type="text" id="titulo" name="titulo" required><br><br>
+
+                <label for="titulo">Nome do cantor(a):</label>
+                <input type="text" id="titulo" name="titulo" required><br><br>
+
+                <label for="descricao">Descrição:</label>
+                <textarea id="descricao" name="descricao" required></textarea><br><br>
+
+                <label for="imagem">Imagem:</label>
+                <input type="file" id="imagem" name="imagem"><br><br>
+
+                <button type="submit">Cadastrar</button>
+            </form>
+        </section>
+
+        <section>
+            <h2>Lista de Artistas cadastrados</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Seção musical cadastrada</th>
+                        <th>Nome do cantor cadastrado(a)</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Artista1</td>
+                        <td>Nome do Artista1</td>
+                        <td>
+                            <button onclick="editarObjeto(1)">Editar</button>
+                            <button onclick="apagarObjeto(1)">Apagar</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Objeto Tema 2</td>
+                        <td>Descrição do Objeto Tema 2</td>
+                        <td>
+                            <button onclick="editarObjeto(2)">Editar</button>
+                            <button onclick="apagarObjeto(2)">Apagar</button>
+                        </td>
+                    </tr>
+                    <!-- Outros objetos podem ser adicionados aqui -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>© 2025 Grazielle Carvalho. Todos os direitos reservados.</p>
+        <a href="sobre.html" class="text-white">Sobre o Autor</a>
+    </footer>
+
+    <script>
+        // Funções para editar e apagar objetos
+        function editarObjeto(id) {
+            alert('Editar objeto com ID: ' + id);
+            // Lógica de edição vai aqui
+        }
+
+        function apagarObjeto(id) {
+            if (confirm('Tem certeza que deseja apagar este objeto?')) {
+                alert('Objeto com ID ' + id + ' apagado');
+                // Lógica de exclusão vai aqui
+            }
+        }
+    </script>
+
+</body>
+</html>
