@@ -1,24 +1,22 @@
-/* Definindo variáveis globais de cores */
+
 :root {
-    --cor-primaria: #c4bfbf; /* Verde da bandeira da Itália */
-    --cor-secundaria: #F4F5F0; /* Branco neutro */
-    --cor-destaque: hsl(48, 89%, 50%); /* Amarelo dourado, símbolo da Itália */
-    --cor-acento: #2750c4; /* Vermelho da bandeira da Itália */
-    --cor-texto: #333; /* Cor do texto principal */
-    --cor-fundo: #F4F4F4; /* Fundo suave */
-    --cor-borda: #ddd; /* Cor para bordas suaves */
+    --cor-primaria: #bebaba; 
+    --cor-secundaria: #F4F5F0; 
+    --cor-destaque: hsl(48, 89%, 50%); 
+    --cor-acento: #2750c4; 
+    --cor-texto: #333; 
+    --cor-fundo: #F4F4F4; 
+    --cor-borda: #ddd; 
     
-    /* Variáveis de Tipografia */
     --font-familia-principal: 'Arial', sans-serif;
     --font-familia-secundaria: 'Helvetica', sans-serif;
     --tamanho-fonte-base: 16px;
-    --tamanho-fonte-titulo: 2rem; /* Tamanho de títulos (h1, h2) */
-    --tamanho-fonte-corpo: 1rem; /* Tamanho do corpo do texto */
+    --tamanho-fonte-titulo: 2rem; 
+    --tamanho-fonte-corpo: 1rem; 
     --peso-fonte: 400;
     --peso-fonte-negrito: 700;
 }
 
-/* Estilos gerais para o body */
 body {
     font-family: var(--font-familia-principal);
     margin: 0;
@@ -27,8 +25,27 @@ body {
     font-size: var(--tamanho-fonte-base);
     color: var(--cor-texto);
 }
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Responsivo */
+    gap: 20px;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  article img {
+    width: 100%; 
+    max-width: 150px;
+    height: auto;
+    border-radius: 10px; 
+  }
+  
+  article p {
+    font-weight: bold;
+    margin-top: 10px;
+  }
 
-/* Cabeçalho */
 header {
     background-color: var(--cor-primaria);
     color: var(--cor-secundaria);
@@ -36,7 +53,6 @@ header {
     padding: 20px 0;
 }
 
-/* Títulos */
 h1, h2 {
     margin: 0;
     padding: 10px 0;
@@ -46,10 +62,9 @@ h1, h2 {
 }
 
 h2 {
-    font-size: 1.5rem; /* Tamanho de h2 */
+    font-size: 1.5rem; 
 }
 
-/* Menu de navegação */
 nav ul {
     list-style-type: none;
     padding: 0;
@@ -76,7 +91,6 @@ nav ul li a:hover {
     color: white;
 }
 
-/* Formulário */
 form {
     margin-bottom: 20px;
     background-color: white;
@@ -114,7 +128,6 @@ button:hover {
     background-color: var(--cor-primaria);
 }
 
-/* Tabelas */
 table {
     width: 100%;
     border-collapse: collapse;
@@ -131,7 +144,6 @@ table th {
     background-color: var(--cor-secundaria);
 }
 
-/* Rodapé */
 footer {
     background-color: var(--cor-primaria);
     color: white;
@@ -149,7 +161,6 @@ footer a:hover {
     text-decoration: underline;
 }
 
-/* Layout do conteúdo principal */
 main {
     padding: 20px;
     background-color: var(--cor-secundaria);
@@ -159,7 +170,6 @@ main {
     border-radius: 8px;
 }
 
-/* Espaçamento adicional */
 section {
     margin-bottom: 40px;
 }
@@ -172,7 +182,6 @@ section {
     margin-bottom: 15px;
 }
 
-/* Estilo de links */
 a {
     color: var(--cor-primaria);
     text-decoration: none;
